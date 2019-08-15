@@ -37,6 +37,243 @@
           by <a href="http://twitter.com/TomiTurtiainen">@TomiTurtiainen</a>
         </section>
 
+        <!-- VSCode -->
+        <section>
+          <section>
+            <h2>VSCode</h2>
+
+            <p class="fragment">No built-in language support</p>
+            <p class="fragment">
+              A set of APIs to enable rich language features
+            </p>
+            <p class="fragment">
+              Is bundled with JS/TS, HTML, CSS, etc. language support
+            </p>
+          </section>
+
+          <section
+            data-background-image="images/language-extensions.png"
+            data-background-size="contain"
+          >
+            <p style="color: white; background-color: #272822">
+              Hundreds of language extensions available
+            </p>
+          </section>
+
+          <section>
+            <h3>VSCode Language Features</h3>
+
+            <ol class="fragment">
+              <li>Declarative features</li>
+              <li>Programmatic features</li>
+            </ol>
+          </section>
+          <section>
+            <h3>Declarative language features</h3>
+
+            <p>
+              Features like syntax highlighting, bracket matching, comment
+              toggling, etc
+            </p>
+            <p>Defined in configuration files</p>
+          </section>
+
+          <section
+            data-background-image="images/declarative-language-config.png"
+            data-background-size="contain"
+          ></section>
+
+          <section>
+            <h3>Syntax highlight</h3>
+
+            <p>
+              Configured using
+              <a href="https://macromates.com/manual/en/language_grammars"
+                >TextMate grammars</a
+              >
+            </p>
+          </section>
+
+          <section
+            data-background-image="images/syntax-config.png"
+            data-background-size="contain"
+          ></section>
+
+          <section>
+            <h3>Programmatic language features</h3>
+
+            <p>
+              Features like auto completion, error checking, jump to definition,
+              etc
+            </p>
+            <p>Usually powered by a Language Server</p>
+          </section>
+        </section>
+
+        <!-- Language server -->
+        <section>
+          <section>
+            <h2>Language Server</h2>
+
+            <ul>
+              <li>
+                Program that analyzes your project to provide dynamic features
+              </li>
+              <li>Can be used by other editors besides VSCode</li>
+              <li>
+                Client (editor) communicates with it using a
+                <b>Language Server Protocol</b>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Language Server Protocol</h3>
+
+            <ul>
+              <li>Open standard originally developed for VSCode</li>
+              <li>
+                Standardizes how editors communicate with language servers
+              </li>
+              <li>
+                Specification available
+                <a href="https://microsoft.github.io/language-server-protocol/"
+                  >here</a
+                >
+              </li>
+              <li>
+                Clients available for many editors (see list
+                <a href="https://langserver.org/">here</a>)
+              </li>
+            </ul>
+          </section>
+
+          <section
+            data-background-iframe="https://microsoft.github.io/language-server-protocol/specification"
+          ></section>
+
+          <section data-background-iframe="https://langserver.org/"></section>
+
+          <section>
+            <h3>How Language Server Protocol works</h3>
+
+            <ul>
+              <li>Server runs as a separate process</li>
+              <li>Client communicates using the protocol over JSON-RPC</li>
+              <li>
+                Transport can be anything, including IPC, sockets or stdio
+              </li>
+            </ul>
+          </section>
+
+          <section
+            data-background-image="images/language-server-sequence.png"
+            data-background-size="contain"
+          ></section>
+        </section>
+
+        <!-- Robot Framework -->
+        <section>
+          <section>
+            <h2>
+              <a href="https://robotframework.org">Robot Framework</a>
+            </h2>
+
+            <ul class="fragment">
+              <li>Automation framework mainly used for testing</li>
+              <li>Written in Python</li>
+              <li>Originally developed at Nokia Networks</li>
+            </ul>
+          </section>
+
+          <section
+            data-background-image="images/robot-example.png"
+            data-background-size="contain"
+          ></section>
+        </section>
+
+        <!-- VSCode RF -->
+        <section>
+          <section>
+            <h2>Robot Framework Language Server</h2>
+          </section>
+
+          <section>
+            <h3>Features</h3>
+          </section>
+
+          <section
+            data-background-image="images/rf-features.gif"
+            data-background-size="contain"
+          ></section>
+
+          <section>
+            <h3>How does it work</h3>
+
+            <img src="images/rf-lang-server-pipeline.png" alt=" " />
+          </section>
+
+          <section>
+            <h3>Parser</h3>
+          </section>
+
+          <section
+            data-background-image="images/code-to-ast.png"
+            data-background-size="contain"
+          ></section>
+
+          <section
+            data-background-image="images/parser-data-model.png"
+            data-background-size="contain"
+          ></section>
+
+          <section
+            data-background-image="images/goto-definition-example.png"
+            data-background-size="contain"
+          ></section>
+
+          <section
+            data-background-iframe="https://marketplace.visualstudio.com/items?itemName=TomiTurtiainen.rf-intellisense"
+          ></section>
+        </section>
+
+        <!-- Getting started -->
+        <section>
+          <section>
+            <h3>How to write your own?</h3>
+
+            <ol>
+              <li>
+                Check the VSCode
+                <a
+                  href="https://code.visualstudio.com/api/language-extensions/overview"
+                  >API documentation</a
+                >
+              </li>
+              <li>
+                Clone and play with the
+                <a
+                  href="https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample"
+                  >LSP sample</a
+                >
+              </li>
+              <li>
+                Check
+                <a
+                  href="https://microsoft.github.io/language-server-protocol/implementors/servers/"
+                  >existing implementations</a
+                >
+                like the
+                <a href="https://github.com/tomi/vscode-rf-language-server"
+                  >RF language server</a
+                >
+              </li>
+            </ol>
+          </section>
+
+          <section></section>
+        </section>
+
         <!-- Thanks -->
         <section>
           <h2>Thank you!</h2>

@@ -20,3 +20,10 @@
   fill: currentColor;
   transform: scale(2);
 }
+
+.hljs-number {
+  color: #d19a66
+}
+.hljs-attr {
+  color: #e06c75
+}
